@@ -1,7 +1,12 @@
 #!/bin/bash
 #include <stdio.h>
+:**
+*min - entry point
+*
+*return: 0 after printing the fonction
+*/
 int main(void)
 {
-puts("\"Programming is like bulding a multilingual puzzle");
+puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
