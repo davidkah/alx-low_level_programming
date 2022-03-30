@@ -1,18 +1,21 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * _strchr - locates a character in a string
- * @s: string input
- * @c: character to find
- * Return: pointer to first occurence of c character
- */
-
-char *_strchr(char *s, char c)
+  *_memset - fills memory with a constant byte.
+  *fills the first n bytes of the memory area pointed
+  *to by s with the constant b.
+  *@s: pointer to memory area.
+  *@b: constant to fill memory with.
+  *@n: bytes of the memory area to be filled.
+  *
+  *Return: pointer to memory area s.
+  */
+char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
+	unsigned int counter;
 
-	for (i = 0; s[i] != '\0'; i++)
-		if (s[i] == c)
-			break;
-	return (s[i] == c ? (s + i) : '\0');
+	for (counter = 0; counter < n; counter++)
+	{
+		s[counter] = b;
+	}
+	return (s);
 }
